@@ -8,7 +8,7 @@ conexao.on("error", (erro) => { console.error("Erro na conexão", erro) })
 conexao.once("open", () => console.log("Conexão feita com sucesso!"))
 
 const app = express()
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors({ origin: 'https://refuge-uyzc-kofr95a20-kaiokors-projects.vercel.app' }))
 routes(app)
 
 export default app
